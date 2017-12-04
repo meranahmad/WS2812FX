@@ -254,6 +254,7 @@ class WS2812FX : public Adafruit_NeoPixel {
       setLength(uint16_t b),
       increaseLength(uint16_t s),
       decreaseLength(uint16_t s),
+      strip_off(void),
       trigger(void);
 
     boolean
@@ -278,7 +279,6 @@ class WS2812FX : public Adafruit_NeoPixel {
   private:
 
     void
-      strip_off(void),
       mode_static(void),
       mode_blink(void),
       mode_color_wipe(void),
